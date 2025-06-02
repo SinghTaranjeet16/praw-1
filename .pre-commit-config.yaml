@@ -18,7 +18,7 @@ repos:
         types: [ python ]
 
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.6.0
+    rev: v5.0.0
     hooks:
       - id: check-added-large-files
       - id: check-executables-have-shebangs
@@ -36,13 +36,13 @@ repos:
       - id: trailing-whitespace
 
   - repo: https://github.com/pappasam/toml-sort
-    rev: v0.23.1
+    rev: v0.24.2
     hooks:
       - id: toml-sort-fix
         files: ^(.*\.toml)$
 
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.3.5
+    rev: v0.11.12
     hooks:
       - id: ruff
         args: [ --exit-non-zero-on-fix, --fix ]
@@ -51,9 +51,9 @@ repos:
   - repo: https://github.com/psf/black
     hooks:
       - id: black
-    rev: 24.3.0
+    rev: 25.1.0
 
   - repo: https://github.com/LilSpazJoekp/docstrfmt
     hooks:
       - id: docstrfmt
-    rev: v1.6.1
+    rev: v1.10.0
